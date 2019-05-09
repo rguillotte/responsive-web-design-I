@@ -63,6 +63,8 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+
+
 /* Header Styles */
 
 header {
@@ -121,6 +123,12 @@ header .logo {
     justify-content: flex-end;
 }
 
+@media(max-width: 768px) {
+    .cta {
+        justify-content:center;
+    }
+}
+
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
@@ -130,6 +138,18 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
+}
+
+@media(max-width: 768px) {
+    .cta .cta-text {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .cta img {
+        display: none;
+    }
 }
 
 .cta .cta-text button {
