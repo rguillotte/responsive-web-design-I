@@ -237,20 +237,41 @@ header .logo {
     }
 }
 
+@media(max-width: 500px) {
+    .main-content {
+        padding: 35px 0;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
 .main-content .top-content {
     display: flex;
 }
 
 @media(max-width: 800px) {
     .main-content .top-content {
+        width:100%;   
+    }
+}
+
+@media(max-width: 500px) {
+    .main-content .top-content {
         width:100%;
-        
+        flex-direction: column; 
     }
 }
 
 .main-content .top-content p {
     padding-right: 20px;
 }
+
+@media(max-width: 500px) {
+    .main-content .top-content p {
+        margin-bottom: 40px;
+    }
+}
+
 
 .main-content .middle-img {
     display: block;
@@ -260,8 +281,13 @@ header .logo {
 @media(max-width: 800px) {
     .main-content .middle-img {
         width: 100%;
-        height: auto;
-        
+        height: auto;   
+    }
+}
+
+@media(max-width: 500px) {
+    .main-content .middle-img {
+        margin: 0 auto 40px;
     }
 }
 
@@ -275,14 +301,31 @@ header .logo {
     }
 }
 
+@media(max-width: 500px) {
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+}
+
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+@media(max-width:500px) {
+    .main-content .bottom-content p {margin-bottom: 40px;
+    }
 }
 
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
+}
+
+@media(max-width:500px) {
+    .contact {
+        margin-left: 5%;
+    }
 }
 
 /* Footer Styles */
